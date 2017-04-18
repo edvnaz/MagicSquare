@@ -49,6 +49,7 @@ public class MagicSquare {
     public boolean tikrinimas(int eil, int stul, int dyd){
         int pvzSuma = 0, sum = 0;
         
+        //pirmos eiles suma
         for(int e = eil; e < eil+1; e++)
         {
             for(int s = stul; s <= stul+dyd; s++)
@@ -57,6 +58,7 @@ public class MagicSquare {
             }
         }
         
+        //horizontaliai
         for(int e = eil; e <= eil+dyd; e++)
         {
             for(int s = stul; s <= stul+dyd; s++)
@@ -70,6 +72,7 @@ public class MagicSquare {
             sum = 0;
         }
         
+        //vertikaliai
         for(int s = stul; s <= stul+dyd; s++)
         {
             for(int e = eil; e <= eil+dyd; e++)
@@ -82,6 +85,7 @@ public class MagicSquare {
             sum = 0;
         }
         
+        //istrizai #1
         if(dyd > 1)
         {
             for(int e = eil; e <= eil+dyd; e++)
