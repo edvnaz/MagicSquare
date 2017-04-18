@@ -85,7 +85,7 @@ public class MagicSquare {
             sum = 0;
         }
         
-        //istrizai #1
+        //istrizai abiem pusem
         int x = dyd;
         if(dyd > 1){
             for(int e = eil; e <= eil+dyd; e++){
