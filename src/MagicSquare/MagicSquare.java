@@ -38,7 +38,10 @@ public class MagicSquare {
         jAp.sprendimas();
     }
     
-
+    /**
+     * Tikrina nuo maziausio iki didziausio galimo magisko kvadrato matricoje
+     * dyd - riboja for funkcija kad neuzeiti is matricos ribu
+     */
     public void sprendimas(){
         for(int dyd = 1; dyd < (stac.length < stac[0].length ? stac.length : stac[0].length)+1; dyd++){
             for(int eil = 0; eil < stac.length-dyd; eil++){
@@ -53,6 +56,7 @@ public class MagicSquare {
 //        System.out.println("ats " + magKvdSk);
     }
     
+    //Tikrina ar tikrinamas kvadratas atitinka mag. kv. savybes
     public boolean tikrinimas(int eil, int stul, int dyd){
         int M = 0, sum = 0, sum2 = 0;
         
